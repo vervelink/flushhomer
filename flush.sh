@@ -6,4 +6,4 @@ IP_ADDR=localhost
 PASSWORD=password
 DB_NAME=homer_db
 
-mysql -Nse -h $IP_ADDR -p$PASSWORD  'show tables' $DB_NAME | while read table; do mysql -e "truncate table $table" $DB_NAME; done
+mysql -N -h $IP_ADDR -p$PASSWORD -u $USER_NAME -e 'show tables'  | while read table; do mysql -e "truncate table $table" $DB_NAME; done
