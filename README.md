@@ -1,3 +1,3 @@
 # flushhomer
 Flushing Homer DB Completely
-This is only to be used when no data retention is required
+This is only to be used when no data retention is required - use with serious caution

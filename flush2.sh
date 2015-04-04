@@ -1,3 +1,6 @@
+#Junaid Saeed Uppal <uppal@vervetelecom.com>
+#Quick 2 minutes hack to clean homer/sipcature DB
+#April 4th , 2015 , Saturday
 USER_NAME=user
 IP_ADDR=localhost
 PASSWORD=password
@@ -23,7 +26,8 @@ echo $clearcmd7 >> doit.sh
 echo $clearcmd8 >> doit.sh
 echo $clearcmd9 >> doit.sh
 echo $clearcmd10 >> doit.sh
-echo "Executing Script Now!\n"
+echo "Executing Script Now!"
 sh doit.sh
-
+echo "Deleting Tmp File"
+rm doit.sh
 
